@@ -1,0 +1,11 @@
+﻿/*Menu*/
+.header .navbar {
+	background-color: #ffffff;
+    border-color: #080808;
+}
+ .header .navbar-brand{
+	background-color: #080808;
+}
+.header .navbar-brand:hover{
+	background-color: #080808;
+}

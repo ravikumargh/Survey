@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\scripts\services\authInterceptorService.js" />
+    <Content Include="app\service\serviceticket.service.js" />
     <Content Include="app\service\client.service - Copy.js" />
     <Content Include="app\service\role.service.js" />
     <Content Include="app\service\department.service.js" />
@@ -66,7 +67,17 @@
     <Content Include="app\service\surveytype.service.js" />
     <Content Include="app\service\statusreason.service.js" />
     <Content Include="app\service\status.service.js" />
+    <Content Include="app\styles\main.css" />
     <Content Include="app\styles\main.scss" />
+    <Content Include="app\views\serviceticket\serviceticket.controller.js" />
+    <Content Include="app\views\serviceticket\serviceticket.js" />
+    <Content Include="app\views\serviceticket\servicetickets.html" />
+    <Content Include="app\views\survey\survey-left-content.html" />
+    <Content Include="app\views\survey\survey-menu.html" />
+    <Content Include="app\views\survey\survey.controller.js" />
+    <Content Include="app\views\survey\survey.html" />
+    <Content Include="app\views\survey\survey.js" />
+    <Content Include="app\views\survey\surveymenu.controller.js" />
     <Content Include="app\views\admin\admin-menu.html" />
     <Content Include="app\views\admin\admin.controller.js" />
     <Content Include="app\views\admin\admin.js" />
@@ -146,6 +157,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -23,7 +23,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-      <div class="container" data-ng-controller="indexController">
+      <div class="container-fluid" data-ng-controller="indexController">
           <div class="header" ng-include="'views/menu.html'"
                ng-controller="MenuCtrl">
           </div>
@@ -70,6 +70,7 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery-infinite-scroll/jquery.infinitescroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -101,12 +102,14 @@
       <script src="service/client.service.js"></script>
       <script src="views/client/client.controller.js"></script>
       <script src="views/client/client.js"></script>
-
-
+      
       <script src="views/admin/adminmenu.controller.js"></script>
       <script src="views/admin/admin.js"></script>
       <script src="views/admin/admin.controller.js"></script>
 
+      <script src="views/survey/surveymenu.controller.js"></script>
+      <script src="views/survey/survey.js"></script>
+      <script src="views/survey/survey.controller.js"></script>
 
       <script src="service/department.service.js"></script>
       <script src="views/department/department-controller.js"></script>
@@ -132,6 +135,9 @@
       <script src="views/clienttype/clienttype.controller.js"></script>
       <script src="views/clienttype/clienttype.js"></script>
 
+      <script src="service/serviceticket.service.js"></script>
+      <script src="views/serviceticket/serviceticket.controller.js"></script>
+      <script src="views/serviceticket/serviceticket.js"></script>
         <!-- endbuild -->
 </body>
 </html>
