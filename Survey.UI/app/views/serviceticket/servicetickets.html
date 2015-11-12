@@ -1,5 +1,5 @@
 <div ng-init="init()">
-    <div class="row">
+    <!--<div class="row">
         <div class="col-lg-12">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="SEARCH REQUEST" aria-label="...">
@@ -12,37 +12,37 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>
                     </ul>
-                </div><!-- /btn-group -->
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="filter_area">
+        <div class="">
+            <i class="fa fa-search"></i>
+            <input type="text" name="firstname" class="search" placeholder=" Search here" />
+        </div>
+        <div class=""> <span class="filter"> filter </span></div>
+    </div>
 
     <div>
- 
         <table st-table="servicetickets" st-safe-src="rowCollection" class="table table-striped">
-
             <tbody>
                 <tr ng-repeat="row in servicetickets">
-                    <td style="width:15%;">
-                        {{row.date}}
-                    </td>
-                    <td style="width:75%;">
-                        <div class="row">
-                            <div class="col-md-12">{{row.clientname}}</div>
-                            <div class="col-md-12">{{row.clientname}}</div>
-                            <div class="col-md-12">{{row.clientname}}</div>
-                        </div>
-                    </td>
                     <td>
-                        <div class="row">
-                            <div class="col-md-12"><button type="button" ng-click="openNewServiceTicketModel()" class="btn btn-sm btn-warning ">New</button></div>
-                            <div class="col-md-12">{{row.clientname}}</div>
-                            <div class="col-md-12">{{row.clientname}}</div>
-                            <div class="col-md-12">{{row.clientname}}</div>
+                        <div class="content_div">
+                            <div class="col-md-3"> {{row.date}} </div>
+                            <div class="col-md-6">
+                                <div class="content_text"> Tyion Lannister{{row.clientname}} </div>
+                                <div class="Townhouse"> Town house </div>
+                                <div class="LastUpdated"> Last Updated:  Monday </div>
+                            </div>
+                            <div class="col-md-3 rightPadding">
+                                <span class="view_btn right"> <a href="#"> View</a></span>
+                                <div class="clear_line"> </div>
+                                <span class="lostlink"> RE 1506 527032 </span>
+                            </div>
                         </div>
-
                     </td>
-
                 </tr>
             </tbody>
         </table>

@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav">
                 <li  ><a   href="#">Logo</a></li>
 
-               <li><a href="#/survey" ng-click="menuClick()">Survey <span class="sr-only">(current)</span></a></li>
+               <li><a href="#/survey/serviceticket" ng-click="menuClick()">Survey <span class="sr-only">(current)</span></a></li>
                 <li><a ng-href="#/admin" ng-click="menuClick()">Admin</a></li>
 
                <!--   <li class="active"><a ng-href="#/services" ng-click="menuClick()">Services</a></li>
@@ -42,7 +42,7 @@
                 <!--<li data-ng-hide="authentication.isAuth"> <a href="#/register">Register</a></li>-->
                 <li data-ng-hide="authentication.isAuth"> <a href="#/login"  >Login</a></li>
                 <li data-ng-hide="!authentication.isAuth"><a href="" data-ng-click="logOut()">Logout</a></li>
-                <li data-ng-hide="authentication.isAuth"><a href="" class="glyphicon glyphicon-plus"></a></li>
+                <li data-ng-hide="authentication.isAuth"><a href="#/newserviceticket" class="glyphicon glyphicon-plus"></a></li>
                 <li data-ng-hide="authentication.isAuth"><a href="" class="glyphicon glyphicon-option-vertical"></a></li>
 
             </ul>

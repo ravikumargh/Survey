@@ -44,6 +44,54 @@ angular.module('yeomanApp')
               surveyno: 35468,
               location : 'Mysore',
               status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
+          },{
+              date:"Aug 02",
+              clientname:"hdfc-Auto",
+              clienttitle:"Auto valued at 75000",
+              survayedon:"survayed on August 15, 2015 by Ravikumar",
+              surveyno: 35468,
+              location : 'Mysore',
+              status: 'new'
           }];
 
           //ServiceTicketService.getServiceTickets()

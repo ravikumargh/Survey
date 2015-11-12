@@ -8,6 +8,7 @@ angular.module('yeomanApp')
             templateUrl: 'views/survey/survey.html',
             controller: 'SurveyController'
         })
+
           .state('survey.serviceticket', {
               url: '/serviceticket',
               templateUrl: 'views/serviceticket/servicetickets.html',

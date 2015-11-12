@@ -9,6 +9,12 @@ var app = angular
  ])
  .config(function ($routeProvider, $stateProvider) {
       
+     $stateProvider
+        .state('login', {
+            url: '/login',
+            templateUrl: 'views/login.html',
+            controller: 'LoginCtrl'
+        });
 
      $routeProvider
        .when('/', {
@@ -31,10 +37,10 @@ var app = angular
              templateUrl: 'views/contact-us.html',
              controller: 'ContactUsCtrl'
          })
-         .when('/login', {
-             templateUrl: 'views/login.html',
-             controller: 'LoginCtrl'
-         })
+         //.when('/login', {
+         //    templateUrl: 'views/login.html',
+         //    controller: 'LoginCtrl'
+         //})
          .when('/register', {
              templateUrl: 'views/register.html',
              controller: 'LoginCtrl'

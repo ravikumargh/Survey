@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\menu\menu.html" />
     <Content Include="app\scripts\services\authInterceptorService.js" />
     <Content Include="app\service\serviceticket.service.js" />
     <Content Include="app\service\client.service - Copy.js" />
@@ -69,9 +70,12 @@
     <Content Include="app\service\status.service.js" />
     <Content Include="app\styles\main.css" />
     <Content Include="app\styles\main.scss" />
+    <Content Include="app\styles\mainstyle - Copy.css" />
+    <Content Include="app\styles\mainstyle.css" />
     <Content Include="app\views\serviceticket\serviceticket.controller.js" />
     <Content Include="app\views\serviceticket\serviceticket.js" />
     <Content Include="app\views\serviceticket\servicetickets.html" />
+    <Content Include="app\views\serviceticket\serviceticket-new.html" />
     <Content Include="app\views\survey\survey-left-content.html" />
     <Content Include="app\views\survey\survey-menu.html" />
     <Content Include="app\views\survey\survey.controller.js" />

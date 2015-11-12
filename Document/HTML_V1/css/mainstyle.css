@@ -1,34 +1,14 @@
-﻿/*Menu*/
-.header .navbar {
-	background-color: #ffffff;
-    border-color: #080808;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
 }
- .header .navbar-brand{
-	background-color: #080808;
+html {
+	line-height: 1;
 }
-.header .navbar-brand:hover{
-	background-color: #080808;
-}
-/*Bootstrap.css starts*/
-.container-fluid{
-    /*padding:0px;*/
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #585757;
-}
-/*Bootstrap.css ends*/
-
-.nopadding{
-    /*padding:0px;*/
-}
-
-
-
-
-
-
-/* general ******************************/
 ol, ul {
 	list-style: none;
 }
@@ -57,15 +37,107 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .clear_line {
 	clear:both;
 }
-/********************************/
+/*-------------------------
+  CSS Chapters:
+  0 - Variables
+  1 - General formatting
+  2 - Header
+  3 - Sidebar
+  4 - Main Content
+  5 - Main Site Footer
+  6 - Media Queries
+-------------------------*/
+/*-------------------------
+  0 - Variables
+-------------------------*/
+/*-------------------------
+  1 - General formatting
+-------------------------*/
 
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/********** Start Fonts ***********/
+@font-face {
+ font-family: 'montserratblack';
+ src: url('../fonts/Montserrat-Black-webfont.eot');
+ src: url('../fonts/Montserrat-Black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Black-webfont.woff2') format('woff2'), url('../fonts/Montserrat-Black-webfont.woff') format('woff'), url('../fonts/Montserrat-Black-webfont.ttf') format('truetype'), url('../fonts/Montserrat-Black-webfont.svg#montserratblack') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'montserratbold';
+ src: url('../fonts/Montserrat-Bold-webfont.eot');
+ src: url('../fonts/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold-webfont.woff2') format('woff2'), url('../fonts/Montserrat-Bold-webfont.woff') format('woff'), url('../fonts/Montserrat-Bold-webfont.ttf') format('truetype'), url('../fonts/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family:'montserrathairline';
+ src: url('../fonts/Montserrat-Hairline-webfont.eot');
+ src: url('../fonts/Montserrat-Hairline-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Hairline-webfont.woff2') format('woff2'), url('../fonts/Montserrat-Hairline-webfont.woff') format('woff'), url('../fonts/Montserrat-Hairline-webfont.ttf') format('truetype'), url('../fonts/Montserrat-Hairline-webfont.svg#montserrathairline') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'montserratlight';
+ src: url('../fonts/Montserrat-Light-webfont.eot');
+ src: url('../fonts/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Light-webfont.woff2') format('woff2'), url('../fonts/Montserrat-Light-webfont.woff') format('woff'), url('../fonts/Montserrat-Light-webfont.ttf') format('truetype'), url('../fonts/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+/********** Start Common Class***********/
 
-
-
-
-
-
-
+body, html {
+	height: 100%;
+}
+strong {
+	font-weight: 400;
+	display: inline-block;
+	background-color: #FFD480;
+	padding: 0 8px;
+}
+body {
+	padding-top: 50px;
+	background: #fbfbfb;
+	color: #555;
+	font-family: "montserratlight", Helvetica, Arial, sans-serif;
+}
+body.nav-open section {
+	margin-left: 0;
+}
+body.nav-open aside {
+	left: 0;
+}
+h1 {
+	font-family: "montserrathairline", sans-serif;
+}
+h2 {
+	margin-bottom: 15px;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.controls {
+	position: relative;
+	margin-bottom: 15px;
+}
+a {
+	text-decoration: none;
+}
+.sep {
+	content: '';
+	border-right: 1px solid rgba(0, 0, 0, 0.13);
+	position: relative;
+	top: -6px;
+}
+.clear_space{ clear:both;}
+.line_height{ line-height:40px;}
 /*-------------------------
   2 - Header
 -------------------------*/
@@ -179,7 +251,6 @@ header button:hover, header button.active {
     color: #fff; cursor:pointer; margin-top: 5px;     font-size: 12px;
 }
 .export a{ color: #fff; padding-right: 8px;}
-
 /*-------------------------
   3 - Sidebar
 -------------------------*/
@@ -418,6 +489,114 @@ input[type="radio"] {
 	color: #FF870E;
 }
 
+/*-------------------------
+  6 - Media Queries
+-------------------------*/
+@media (min-width: 500px) {
+ body.nav-open section {
+margin-left: 250px;
+}
+ aside {
+ position: fixed;
+ top: 0;
+ padding-top: 80px;
+ width: 250px;
+}
+ .site-footer {
+ position: fixed;
+ z-index: 5;
+ bottom: 0;
+ left: 0;
+}
+}
+@media (max-width: 320px) {
+.mob_col-md-12{width: 100% !important;}
+.left_bg{padding: 20px !important;}
+.Infographic ul li{padding-right: 20px !important;}
+.left_border {width: 100% !important;}
+.bor_bot{padding-bottom: 60px !important;line-height: 25px;}
+.hide{padding: 10px 0 5px 0 !important;}
+.pageH { font-size: 22px;}
+.radio_lineV { float: none; margin: 0;}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+.mobile_hide{ display:none;}
+.subheader_be {
+    padding: 12px 0 0 20px;
+	height: 100px;
+}
+.inProcess{    padding: 10px 0 0 4px;}
+.export,.save_b{    margin-top: 3px;}
+.leftarea {
+    width: 114.6%;
+    min-height: 200px;
+}
+.left_txtH{font-size: 18px;}
+.left_txt{margin-top: 0;width: 100%;}
+.left_txt span{font-size: 14px;}
+.tab-nv{  float: left;}
+.rightarea{width: 100%; padding-left: 0;}
+.rightarea_main {
+    padding: 15px 0;
+}
+.site-footer{background:#bebebe;}
+}
+
+@media (max-width: 768px) {
+.subheader_be{padding: 23px 0 0 17px;}
+.inProcess{    padding: 0px 0 0 20px;}
+.Requested {padding: 21px 0 0 0px;position: relative;left: -68px;}
+.rightarea{    width: 62%;}
+.leftarea{    width: 40%;}
+.tab-nv{    margin-top: -380px;     width: 83px;}
+.rightarea_main { padding: 23px 0px 100px 23px;}
+
+}
+@media (max-width: 800px) {
+.subheader_be{padding: 23px 0 0 10px;}
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	float: left;
+}
+.col-md-12 {
+	width: 100%;
+}
+.col-md-11 {
+	width: 91.66666667%;
+}
+.col-md-10 {
+	width: 83.33333333%;
+}
+.col-md-9 {
+	width: 75%;
+}
+.col-md-8 {
+	width: 66.66666667%;
+}
+.col-md-7 {
+	width: 58.33333333%;
+}
+.col-md-6 {
+	width: 50%;
+}
+.col-md-5 {
+	width: 41.66666667%;
+}
+.col-md-4 {
+	width: 33.33333333%;
+}
+.col-md-3 {
+	width: 25%;
+}
+.col-md-2 {
+	width: 16.66666667%;
+}
+.col-md-1 {
+	width: 8.33333333%;
+}
 /* Home Page Css*/
 .filter_area {
 	background: #EEE;
@@ -444,7 +623,7 @@ input[type="radio"] {
 	text-transform: uppercase;
 	font-size: 12px;
 	margin-right: -20px;
-	margin-top: -42px;
+	margin-top: -33px;
 	color: #319FEF;
 }
 .content_div {
@@ -583,3 +762,93 @@ input[type="radio"] {
  transition: width .6s ease;
 }
 /* Home Page Css End*/
+
+div#contentarea {
+	position: relative;
+	width: 100%;
+	-moz-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-moz-transition: -moz-transform 0.5s;
+	/* transition settings */
+  
+  -webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+input[type="checkbox"]#togglebox {
+	/* checkbox used to toggle menu state */
+  position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+label#navtoggler {
+	/* Main label icon to toggle menu state */
+  z-index: 9;
+	display: block;
+	position: relative;
+	font-size: 8px;
+	/* change font size to change label dimensions. Leave width/height below alone */
+  width: 4em;
+	height: 2.5em;
+	top: 0;
+	left: 0;
+	text-indent: -1000px;
+	border: 0.6em solid black;
+	/* border color */
+  border-width: 0.6em 0;
+	cursor: pointer;
+}
+ label#navtoggler::before {
+  /* inner strip inside label */
+  content: "";
+ display: block;
+ position: absolute;
+ width: 100%;
+ height: 0.6em;
+ top: 50%;
+ margin-top: -0.3em;
+ left: 0;
+ background: black;
+/* stripes background color. Change to match border color of parent label above */
+}
+nav#offcanvas-menu {
+	/* Full screen nav menu */
+	width: 250px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden; /* this is for browsers that don't support CSS3 translate3d */
+	-moz-transform: translate3d(-250px, 0, 0);
+	-webkit-transform: translate3d(-250px, 0, 0);
+	transform: translate3d(-250px, 0, 0);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #0a70ba;
+	display: block;
+	position: fixed;
+	text-align: center;
+	overflow: auto;
+	-moz-transition: -moz-transform 0.5s, visibility 0s 0.5s;
+	/* transition settings */
+  -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+ input[type="checkbox"]#togglebox:checked ~ div#contentarea {
+ margin-left: 10px;
+ -moz-transform: translate3d(250px, 0, 0);
+ -webkit-transform: translate3d(250px, 0, 0);
+ transform: translate3d(250px, 0, 0);
+}
+ input[type="checkbox"]#togglebox:checked ~ nav#offcanvas-menu {
+  /* nav state when corresponding checkbox is checked */
+  -moz-transform: translate3d(0, 0, 0);
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+ visibility: visible; /* this is for browsers that don't support CSS3 translate3d in showing the menu */
+ -moz-transition-delay: 0s; /* No delay for applying "visibility:visible" property when menu is going from "closed" to "open" */
+ -webkit-transition-delay: 0s;
+ transition-delay: 0s;
+}
