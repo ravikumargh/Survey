@@ -225,6 +225,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\ClientTypeController.cs" />
+    <Compile Include="Controllers\ServiceTicketController.cs" />
     <Compile Include="Controllers\SurveyTypeController.cs" />
     <Compile Include="Controllers\StatusreasonController.cs" />
     <Compile Include="Controllers\StatusController.cs" />

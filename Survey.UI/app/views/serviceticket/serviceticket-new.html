@@ -70,83 +70,162 @@
             </div>
             <div class="rightarea">
 
-                <div class="rightarea_main">
+                <div class="rightarea_main row">
 
-                    <div class="rightareaH"> Requested Information </div>
-                    <br>
-                    <br>
-                    <div class="rightareadate"> Date of Requested  </div>
-                    <br>
-                    <div class="rightareaInfo"> June 14, 2015 09:26  <span>  3 hours 23 minutes ago </span> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="line"> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="rightareadate"> Property Type  </div>
-                    <br>
-                    <div class="rightareaInfo"> What is the Type of Property?</div>
+                    <form>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlStatus">Status</label>
+                                <select class="col-md-3 form-control" id="ddlStatus">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <!--<select ng-model="status"
+                                ng-options="status.name in statuses"></select>-->
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlClient">Client</label>
+                                <select class="col-md-3 form-control" id="ddlClient">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
+                                    <option>Client 3</option>
+                                    <option>Client 4</option>
+                                    <option>Client 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlDepartment ">Department </label>
+                                <select class="col-md-3 form-control" id="ddlDepartment ">
+                                    <option>Department  1</option>
+                                    <option>Department  2</option>
+                                    <option>Department  3</option>
+                                    <option>Department  4</option>
+                                    <option>Department  5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlSurveyType">Survey Type</label>
+                                <select class="col-md-3 form-control" id="ddlSurveyType">
+                                    <option>SurveyType  1</option>
+                                    <option>SurveyType  2</option>
+                                    <option>SurveyType  3</option>
+                                    <option>SurveyType  4</option>
+                                    <option>SurveyType  5</option>
+                                </select>
+                            </div>
+                        </div>
 
-                    <div>
-                        <ul class="radio_lineV" style="margin: 0;">
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                        </ul>
-                        <ul class="radio_lineV">
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                        </ul>
-                        <ul class="radio_lineV" style="margin: 0;">
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                        </ul>
-                        <ul class="radio_lineV">
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                            <li> <input type="radio"> <label>Apartment </label> </li>
-                        </ul>
-                    </div>
-                    <div class="clear_space"> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="line"> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="rightareadate"> Property Complex  </div>
-                    <br>
-                    <div class="rightareaInfo"> Is this a property Complex?</div>
-                    <ul class="radio_lineV" style="margin: 0;">
-                        <li> <input type="radio"> <label>Yes </label> </li>
-                        <li> <input type="radio"> <label>No </label> </li>
+                        <div class="form-group  row">
+                            <label class="col-md-2 control-label" for="txtReferenceNo">Reference No</label>
+                            <input type="text" class="col-md-10 form-control" id="txtReferenceNo" placeholder="Reference number">
+                        </div>
 
-                    </ul>
-                    <div class="clear_space"> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="line"> </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="rightareadate"> Property Complex  </div>
-                    <br>
-                    <div class="rightareaInfo"> Is this the Apartment Number?</div>
-                    <input class="input_txt" type="text" value="209A">
+                        <div class="form-group  row">
+                            <label class="col-md-2 control-label" for="txtDescription">Description</label>
+                            <textarea id="txtDescription" class="col-md-10 form-control" rows="3"></textarea>
+                        </div>
 
+                        <div class="row">
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlStatusReason">Status Reason</label>
+                                <select class="col-md-3 form-control" id="ddlStatusReason">
+                                    <option>StatusReason  1</option>
+                                    <option>StatusReason  2</option>
+                                    <option>StatusReason  3</option>
+                                    <option>StatusReason  4</option>
+                                    <option>StatusReason  5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlPriority">Priority</label>
+                                <select class="col-md-3 form-control" id="ddlPriority">
+                                    <option>Priority  1</option>
+                                    <option>Priority  2</option>
+                                    <option>Priority  3</option>
+                                    <option>Priority  4</option>
+                                    <option>Priority  5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlDueDate">Due date</label>
+                                <div class="col-md-3" id="ddlDueDate">
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="ddlSurveyor">Surveyor</label>
+                                <select class="col-md-3 form-control" id="ddlSurveyor">
+                                    <option>Surveyor  1</option>
+                                    <option>Surveyor  2</option>
+                                    <option>Surveyor  3</option>
+                                    <option>Surveyor  4</option>
+                                    <option>Surveyor  5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="ddlCustomerAvailable">Customer Availability</label>
+
+                            <div class="col-md-5" id="ddlCustomerAvailable">
+                                <p class="input-group">
+                                    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="input-group">
+                                    <input type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group  row">
+                            <label class="col-md-2 control-label" for="txtName">Name</label>
+                            <input type="text" class="col-md-10 form-control" id="txtName" placeholder="Name">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="txtCompanyName">Company Name</label>
+                            <input type="text" class="col-md-10 form-control" id="txtCompanyName" placeholder="Company Name">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="txtPhone">Phone number</label>
+                            <input type="text" class="col-md-10 form-control" id="txtPhone" placeholder="Phone number">
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="txtMobile">Mobile number</label>
+                            <input type="text" class="col-md-10 form-control" id="txtMobile" placeholder="Mobile number">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="txtAddress1">Address 1</label>
+                            <textarea id="txtAddress1" class="col-md-10 form-control" rows="3" placeholder="Address 1"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 control-label" for="txtAddress2">Address 2</label>
+                            <textarea id="txtAddress2" class="col-md-10 form-control" rows="3" placeholder="Address 2"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
 
                 </div>
             </div>
@@ -155,5 +234,4 @@
         </article>
     </section>
 </div>
-  
- 
+

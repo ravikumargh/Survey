@@ -20,6 +20,7 @@ namespace Survey.Data
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<StatusReason> StatusReasons { get; set; }
+        public virtual DbSet<ServiceTicket> ServiceTickets { get; set; }
         public virtual DbSet<SurveyType> SurveyTypes { get; set; }
         public virtual DbSet<User> Users { get; set; }
 

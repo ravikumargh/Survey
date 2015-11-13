@@ -10,6 +10,7 @@ namespace Survey.Data.Entities
             //UserClaims = new HashSet<UserClaim>();
             //UserLogins = new HashSet<UserLogin>();
             Roles = new HashSet<Role>();
+            ServiceTickets = new HashSet<ServiceTicket>();
         }
 
         public string Email { get; set; }
@@ -38,5 +39,6 @@ namespace Survey.Data.Entities
         //public virtual ICollection<UserClaim> UserClaims { get; set; }
         //public virtual ICollection<UserLogin> UserLogins { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
+        public virtual ICollection<ServiceTicket> ServiceTickets { get; set; }
     }
 }

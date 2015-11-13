@@ -30,6 +30,7 @@ namespace Survey.WebApi
             container.RegisterType<IRepository<Client>, ClientRepository>();
             container.RegisterType<IRepository<Status>, StatusRepository>();
             container.RegisterType<IRepository<StatusReason>, StatusReasonRepository>();
+            container.RegisterType<IRepository<ServiceTicket>, ServiceTicketRepository>();
             container.RegisterType<IRepository<SurveyType>, SurveyTypeRepository>();
             container.RegisterType<IRepository<ClientType>, Survey.Data.Entities.ClientTypeRepository>();
             return container;

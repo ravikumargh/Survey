@@ -56,6 +56,9 @@
     <Compile Include="Entities\Addressbool.cs" />
     <Compile Include="Entities\AddressRepository.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Priority.cs" />
+    <Compile Include="Entities\ServiceTicket.cs" />
+    <Compile Include="Entities\ServiceTicketRepository.cs" />
     <Compile Include="Entities\SurveyTypeRepository.cs" />
     <Compile Include="Entities\StatusReasonRepository.cs" />
     <Compile Include="Entities\StatusRepository.cs" />
