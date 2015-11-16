@@ -2,8 +2,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
-	font-size: 100%;
+	/*font: inherit;*/
+	/*font-size: 100%;*/
 	vertical-align: baseline;
 }
 html {
@@ -241,14 +241,15 @@ header button:hover, header button.active {
 	padding: 15px;
     float: left;
     color: #fff; cursor:pointer;
-	margin-top: 5px;     font-size: 12px;
+	font-size: 12px;
 }
 .save_b a{ color: #fff;padding-right: 8px;}
 .export{
 	background:#91c757;
 	padding: 15px;
     float: left;
-    color: #fff; cursor:pointer; margin-top: 5px;     font-size: 12px;
+    color: #fff; cursor:pointer;  
+    font-size: 12px;
 }
 .export a{ color: #fff; padding-right: 8px;}
 /*-------------------------
@@ -618,7 +619,7 @@ margin-left: 250px;
 .filter {
 	text-align: center;
 	background: #fff;
-	padding: 16px 20px;
+	padding: 12px 20px;
 	float: right;
 	text-transform: uppercase;
 	font-size: 12px;

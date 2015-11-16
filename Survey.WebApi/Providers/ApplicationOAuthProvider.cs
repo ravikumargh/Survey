@@ -38,7 +38,7 @@ namespace Survey.WebApi.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            var user = userRepository.Get(w => w.UserName == context.UserName && w.PasswordHash == context.Password);
+            var user = userRepository.Get(w => w.UserName == context.UserName && w.Password == context.Password);
             
             //var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
 

@@ -27,17 +27,17 @@
     <div>
         <table st-table="servicetickets" st-safe-src="rowCollection" class="table table-striped">
             <tbody>
-                <tr ng-repeat="row in servicetickets">
+                <tr ng-repeat="serviceticket in servicetickets">
                     <td>
                         <div class="content_div">
-                            <div class="col-md-3"> {{row.date}} </div>
+                            <div class="col-md-3"> {{serviceticket.DateCreated}} </div>
                             <div class="col-md-6">
-                                <div class="content_text"> Tyion Lannister{{row.clientname}} </div>
+                                <div class="content_text">{{getClientDetails(this).Name}}-{{getSurveyType(this).Name}} </div>
                                 <div class="Townhouse"> Town house </div>
-                                <div class="LastUpdated"> Last Updated:  Monday </div>
+                                <div class="LastUpdated"> Last Updated:  {{serviceticket.DateUpdated}}  </div>
                             </div>
                             <div class="col-md-3 rightPadding">
-                                <span class="view_btn right"> <a href="#"> View</a></span>
+                                <span class="view_btn right"> <a href="#/viewserviceticket/{{serviceticket.Id}}"> View</a></span>
                                 <div class="clear_line"> </div>
                                 <span class="lostlink"> RE 1506 527032 </span>
                             </div>

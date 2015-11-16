@@ -18,6 +18,7 @@ namespace Survey.Data
         public virtual DbSet<ClientType> ClientTypes { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<StatusReason> StatusReasons { get; set; }
         public virtual DbSet<ServiceTicket> ServiceTickets { get; set; }

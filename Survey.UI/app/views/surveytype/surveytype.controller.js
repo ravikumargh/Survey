@@ -17,11 +17,11 @@ angular.module('yeomanApp')
     
       $scope.init = function () {
 
-          $scope.statuss = null;
+          $scope.surveytypes = null;
 
           SurveyTypeService.getSurveyTypes()
               .then(function (response) {
-                  $scope.statuss = response.data;
+                  $scope.surveytypes = response.data;
               },
               function (err) {
 
@@ -30,7 +30,7 @@ angular.module('yeomanApp')
 
       $scope.deleteSurveyType = function (status) {
           SurveyTypeService.deleteSurveyType(status.Id).then(function (response) {
-              //_.remove($scope.statuss, function (status) {
+              //_.remove($scope.surveytypes, function (status) {
               //    return status.Id;
               //});
               $scope.init();

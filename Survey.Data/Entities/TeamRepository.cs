@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Survey.Data.Entities
 { 
-    public class ClientRepository : IRepository<Client>, IDisposable
+    public class TeamRepository : IRepository<Team>, IDisposable
     {
         private SurveyEntities _context;
         private bool _disposed;
-        private  IDbSet<Client> dbSet;
+        private  IDbSet<Team> dbSet;
         protected IDbFactory DbFactory
         {
             get;
@@ -25,33 +25,33 @@ namespace Survey.Data.Entities
         {
             get { return _context ?? (_context = DbFactory.Init()); }
         }
-        public ClientRepository()
+        public TeamRepository()
         {
             _context = new SurveyEntities();
-            dbSet = DbContext.Set<Client>();
+            dbSet = DbContext.Set<Team>();
         }
          
         public void Delete(long id)
         {
-            Client Client = _context.Clients.Single(w => w.Id == id);
-            _context.Clients.Remove(Client);
+            Team Team = _context.Teams.Single(w => w.Id == id);
+            _context.Teams.Remove(Team);
             _context.SaveChanges();
         }
 
-        //public IQueryable<Client> SearchFor(System.Linq.Expressions.Expression<Func<Clientbool>> filter)
+        //public IQueryable<Team> SearchFor(System.Linq.Expressions.Expression<Func<Teambool>> filter)
         //{
         //    throw new NotImplementedException();
         //}
 
-        public IEnumerable<Client> GetAll()
+        public IEnumerable<Team> GetAll()
         {
             return dbSet.ToList();
         }
          
-        public Client GetById(long id)
+        public Team GetById(long id)
         {
-            Client Client = _context.Clients.Single(w => w.Id == id);
-            return Client;
+            Team Team = _context.Teams.Single(w => w.Id == id);
+            return Team;
         }
         public void Dispose()
         {
@@ -63,45 +63,44 @@ namespace Survey.Data.Entities
             throw new NotImplementedException();
         }
 
-        public void Add(Client entity)
+        public void Add(Team entity)
         {
-            _context.Clients.Add(entity);
+            _context.Teams.Add(entity);
             _context.SaveChanges();
         }
 
-        public void Update(Client entity)
+        public void Update(Team entity)
         {
-            Client Client = _context.Clients.Single(w=>w.Id==entity.Id);
-            Client.Name = entity.Name;
-            Client.Code = entity.Code;
+            Team Team = _context.Teams.Single(w=>w.Id==entity.Id);
+            Team.Name = entity.Name;
             _context.SaveChanges();
         }
 
-        public void Delete(System.Linq.Expressions.Expression<Func<Client, bool>> where)
+        public void Delete(System.Linq.Expressions.Expression<Func<Team, bool>> where)
         {
             throw new NotImplementedException();
         }
  
-        public Client Get(System.Linq.Expressions.Expression<Func<Client, bool>> where)
+        public Team Get(System.Linq.Expressions.Expression<Func<Team, bool>> where)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Client> GetMany(System.Linq.Expressions.Expression<Func<Client, bool>> where)
-        {
-            throw new NotImplementedException();
-        }
-
-
-        public void Delete(Client entity)
+        public IEnumerable<Team> GetMany(System.Linq.Expressions.Expression<Func<Team, bool>> where)
         {
             throw new NotImplementedException();
         }
 
 
+        public void Delete(Team entity)
+        {
+            throw new NotImplementedException();
+        }
 
 
-        public Client GetById(int id)
+
+
+        public Team GetById(int id)
         {
             throw new NotImplementedException();
         }

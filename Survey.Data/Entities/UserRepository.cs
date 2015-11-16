@@ -75,7 +75,14 @@ namespace Survey.Data.Entities
 
         public void Update(User entity)
         {
-            throw new NotImplementedException();
+            User User = _context.Users.Single(w => w.Id == entity.Id);
+            User.Name = entity.Name;
+            User.UserName = entity.UserName;
+            User.RoleId = entity.RoleId;
+            User.PhoneNumber = entity.PhoneNumber;
+            User.Address = entity.Address;
+            User.Email = entity.Email;
+            _context.SaveChanges();
         }
 
         public void Delete(System.Linq.Expressions.Expression<Func<User, bool>> where)

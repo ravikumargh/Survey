@@ -29,6 +29,7 @@ namespace Survey.WebApi
             container.RegisterType<IRepository<User>, UserRepository>();
             container.RegisterType<IRepository<Client>, ClientRepository>();
             container.RegisterType<IRepository<Status>, StatusRepository>();
+            container.RegisterType<IRepository<Team>, TeamRepository>();
             container.RegisterType<IRepository<StatusReason>, StatusReasonRepository>();
             container.RegisterType<IRepository<ServiceTicket>, ServiceTicketRepository>();
             container.RegisterType<IRepository<SurveyType>, SurveyTypeRepository>();

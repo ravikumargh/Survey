@@ -4,13 +4,15 @@ angular.module('yeomanApp')
   .controller('AdminMenuController', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
       $scope.menus = [
+		                      { active: false, text: 'Users', path: '.users' },
 		                      { active: false, text: 'Clients', path: '.clients' },
                               { active: false, text: 'Client Types', path: '.clienttypes' },
 		                      { active: false, text: 'Departments', path: '.departments' },
                               { active: false, text: 'Roles', path: '.roles' },
                               { active: false, text: 'Statuses', path: '.statuses' },
                               { active: false, text: 'Status reasons', path: '.statusreasons' },
-                              { active: false, text: 'Survey Types', path: '.surveytypes' }
+                              { active: false, text: 'Survey Types', path: '.surveytypes' },
+                              { active: false, text: 'Teams', path: '.teams' }
       ];
 
       $scope.$on('handleBroadcast_setActiveResourcesTab', function (handler, view) {

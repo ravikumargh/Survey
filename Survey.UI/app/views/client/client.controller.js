@@ -74,10 +74,9 @@ angular.module('yeomanApp')
 
           var modalInstance = $uibModal.open({
               animation: $scope.animationsEnabled,
-              templateUrl: 'myModalContent.html',
-              controller: 'ModalInstanceCtrl',
+              templateUrl: 'ClientModalContent.html',
+              controller: 'ClientModalInstanceCtrl',
               size: 'sm',
-              animation: true,
               resolve: {
                   parentScope: function () {
                       return $scope;
@@ -95,10 +94,9 @@ angular.module('yeomanApp')
               $scope.selectedClient= $scope.newclient;
           var modalInstance = $uibModal.open({
               animation: $scope.animationsEnabled,
-              templateUrl: 'myModalContent.html',
-              controller: 'ModalInstanceCtrl',
+              templateUrl: 'ClientModalContent.html',
+              controller: 'ClientModalInstanceCtrl',
               size: 'sm',
-              animation: true,
               resolve: {
                   parentScope: function () {
                       return $scope;
@@ -119,7 +117,6 @@ angular.module('yeomanApp')
               templateUrl: 'DeleteConfirmationModalContent.html',
               controller: 'DeleteConfirmationModalInstanceControl',
               size: 'sm', 
-              animation: true,
               resolve: {
                   parentScope: function () {
                       return $scope;
@@ -136,11 +133,12 @@ angular.module('yeomanApp')
   }]);
 
 
-angular.module('yeomanApp').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, parentScope) {
+angular.module('yeomanApp').controller('ClientModalInstanceCtrl', function ($scope, $uibModalInstance, parentScope) {
 
     $scope.selectedClient = parentScope.selectedClient;
     
     $scope.ok = function () {
+        console.log($scope.selectedClient);
         $uibModalInstance.close($scope.selectedClient);
     };
 

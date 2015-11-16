@@ -11,6 +11,10 @@ angular.module('yeomanApp')
             url: '/newserviceticket',
             templateUrl: 'views/serviceticket/serviceticket-new.html',
             controller: 'ServiceTicketController'
+        }).state('viewserviceticket', {
+            url: '/viewserviceticket/:id',
+            templateUrl: 'views/serviceticket/serviceticket-view.html',
+            controller: 'ServiceTicketController'
         });
 
       //$routeProvider

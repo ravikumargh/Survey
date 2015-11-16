@@ -8,6 +8,14 @@ angular.module('yeomanApp')
             templateUrl: 'views/admin/admin.html',
             controller: 'AdminController'
         })
+        .state('admin.users', {
+            url: '/users',
+            templateUrl: 'views/user/users.html',
+            controller: 'UserController',
+            data: {
+                requireLogin: true
+            }
+        })
         .state('admin.clients', {
             url: '/clients',
             templateUrl: 'views/client/clients.html',
@@ -20,6 +28,14 @@ angular.module('yeomanApp')
             url: '/roles',
             templateUrl: 'views/role/roles.html',
             controller: 'RoleController',
+            data: {
+                requireLogin: true
+            }
+        })
+        .state('admin.teams', {
+            url: '/teams',
+            templateUrl: 'views/team/teams.html',
+            controller: 'TeamController',
             data: {
                 requireLogin: true
             }
@@ -49,13 +65,13 @@ angular.module('yeomanApp')
               }
           })
             .state('admin.statusreasons', {
-              url: '/statusreasons',
-              templateUrl: 'views/statusreason/statusreasons.html',
-              controller: 'StatusreasonController',
-              data: {
-                  requireLogin: true
-              }
-          })
+                url: '/statusreasons',
+                templateUrl: 'views/statusreason/statusreasons.html',
+                controller: 'StatusreasonController',
+                data: {
+                    requireLogin: true
+                }
+            })
       .state('admin.departments', {
           url: '/departments',
           templateUrl: 'views/department/departments.html',

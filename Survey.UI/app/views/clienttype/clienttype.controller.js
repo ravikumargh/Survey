@@ -17,11 +17,11 @@ angular.module('yeomanApp')
     
       $scope.init = function () {
 
-          $scope.statuss = null;
+          $scope.clienttypes = null;
 
           ClientTypeService.getClientTypes()
               .then(function (response) {
-                  $scope.statuss = response.data;
+                  $scope.clienttypes = response.data;
               },
               function (err) {
 
@@ -30,7 +30,7 @@ angular.module('yeomanApp')
 
       $scope.deleteClientType = function (status) {
           ClientTypeService.deleteClientType(status.Id).then(function (response) {
-              //_.remove($scope.statuss, function (status) {
+              //_.remove($scope.clienttypes, function (status) {
               //    return status.Id;
               //});
               $scope.init();

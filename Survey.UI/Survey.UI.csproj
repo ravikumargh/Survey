@@ -57,10 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\menu\menu.html" />
     <Content Include="app\scripts\services\authInterceptorService.js" />
+    <Content Include="app\service\team.service.js" />
     <Content Include="app\service\serviceticket.service.js" />
-    <Content Include="app\service\client.service - Copy.js" />
+    <Content Include="app\service\user.service.js" />
     <Content Include="app\service\role.service.js" />
     <Content Include="app\service\department.service.js" />
     <Content Include="app\service\client.service.js" />
@@ -72,6 +74,15 @@
     <Content Include="app\styles\main.scss" />
     <Content Include="app\styles\mainstyle - Copy.css" />
     <Content Include="app\styles\mainstyle.css" />
+    <Content Include="app\vendor.21e4b8a2.js" />
+    <Content Include="app\vendor.e34301de.css" />
+    <Content Include="app\views\serviceticket\serviceticket-view.html" />
+    <Content Include="app\views\team\team.controller.js" />
+    <Content Include="app\views\team\team.js" />
+    <Content Include="app\views\team\teams.html" />
+    <Content Include="app\views\user\user.controller.js" />
+    <Content Include="app\views\user\user.js" />
+    <Content Include="app\views\user\users.html" />
     <Content Include="app\views\serviceticket\serviceticket.controller.js" />
     <Content Include="app\views\serviceticket\serviceticket.js" />
     <Content Include="app\views\serviceticket\servicetickets.html" />
@@ -100,6 +111,10 @@
     <Content Include="app\views\statusreason\statusreason.js" />
     <Content Include="app\views\statusreason\statusreasons.html" />
     <Content Include="app\views\statusreason1\statusreason.controller.js" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -38,14 +38,17 @@ namespace Survey.WebApi.Controllers
         public void Post(User user)
         {
             //user.Id = Guid.NewGuid();
-            user.PasswordHash = "P@ssword1";
-              UserRepository.Add(user);
+            user.UserName = user.Email;
+            user.Password = "P@ssword1";
+            UserRepository.Add(user);
 
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(User user)
         {
+            user.UserName = user.Email;
+            UserRepository.Update(user);
         }
 
         // DELETE api/<controller>/5

@@ -3,21 +3,21 @@
         <div class="subheader_be">
             <div class="left">
                 <ul class="page_top">
-                    <li class="pageH"> Editing RE 1506 527032 </li>
+                    <li class="pageH"> Viewing RE 1506 527032 </li>
                     <li class="inProcess">  in Process </li>
                     <li class="Requested mobile_hide"> Requested 3 week ago, Last updated Monday </li>
                 </ul>
             </div>
             <div class="right">
                 <div class="export"> <a href="#"> Export</a> <i class="fa fa-angle-down"></i> </div>
-                <div class="save_b"> <a href="#"> Save</a> <i class="fa fa-angle-down"></i></div>
+                <div class="save_b"> <a href="#"> Approve</a> <i class="fa fa-angle-down"></i></div>
             </div>
         </div>
         <article>
             <div class="leftarea">
                 <div class="left_txt">
                     <div class="left_txtH">  Property Owner </div>
-                    <span>  Ravikumar </span>
+                    <span>  Ravikumar</span>
                     <br>
                     <br>
                     <br>
@@ -52,27 +52,14 @@
                     <span style="color:#82B9E0;">Show  comments (3)</span>
                 </div>
 
-                <!--<div class="tab-nv mobile_hide">
-                    <ul>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li class="tab-nv_sel"> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
-                        <li> <a href="#"> Process Data </a> </li>
 
-                    </ul>
-                </div>-->
 
             </div>
             <div class="rightarea">
 
                 <div class="rightarea_main row">
-
-                    <form>
+                    <h1>Surveyed result</h1>
+                    <!--<form>
                         <div class="row">
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="ddlStatus">Status</label>
@@ -80,8 +67,6 @@
                                     <option value="" ng-selected="selected">Select Status</option>
                                     <option value="{{status.Id}}" ng-repeat="status in statuses">{{status.Name}}</option>
                                 </select>
-                                <!--<select ng-model="status"
-                                ng-options="status.name in statuses"></select>-->
 
                                 <label class="col-md-3 control-label" for="ddlClient">Client</label>
                                 <select ng-model="newserviceticket.ClientId" class="col-md-3 form-control" id="ddlClient">
@@ -142,7 +127,6 @@
                                 <div class="col-md-3" id="ddlDueDate">
                                     <p class="input-group">
                                         <input type="date" name="duedate" class="form-control" ng-model="newserviceticket.DueDate">
-                                        <!--<input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="newserviceticket.DueDate" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />-->
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                                         </span>
@@ -163,7 +147,6 @@
                             <div class="col-md-5" id="ddlCustomerAvailable">
                                 <p class="input-group">
                                     <input type="date" name="CustomerAvailableFrom" class="form-control" ng-model="newserviceticket.CustomerAvailableFrom">
-                                    <!--<input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="newserviceticket.CustomerAvailableFrom" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />-->
                                     <span class="input-group-btn">
                                         <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                                     </span>
@@ -172,7 +155,6 @@
                             <div class="col-md-5">
                                 <p class="input-group">
                                     <input type="date" name="CustomerAvailableTo" class="form-control" ng-model="newserviceticket.CustomerAvailableTo">
-                                    <!--<input type="date" class="form-control" uib-datepicker-popup ng-model="newserviceticket.CustomerAvailableTo" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />-->
                                     <span class="input-group-btn">
                                         <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                                     </span>
@@ -205,7 +187,7 @@
                             <textarea id="txtAddress2" ng-model="newserviceticket.Address2" class="col-md-10 form-control" rows="3" placeholder="Address 2"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default" ng-click="SaveServiceTicket()">Submit</button>
-                    </form>
+                    </form>-->
 
                 </div>
             </div>
