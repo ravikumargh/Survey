@@ -247,6 +247,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\script_survey_new.sql" />
+    <Content Include="App_Data\SurvayWithDatascript.sql" />
+    <Content Include="App_Data\survey_script_17-11-2015.sql" />
     <Content Include="App_Data\survey_script_2.sql" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
