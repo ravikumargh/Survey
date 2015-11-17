@@ -23,21 +23,21 @@
                 </tr>-->
             </thead>
             <tbody>
-                <tr ng-repeat="row in users">
-                    <td>{{row.Name}}</td>
-                    <td>{{row.Email}}</td>
-                    <td>{{row.TeamId}}</td>
-                    <td>{{row.RoleId}}</td>
-                    <td>{{row.PhoneNumber}}</td>
-                    <td>{{row.Address}}</td>
+                <tr ng-repeat="user in users">
+                    <td>{{user.Name}}</td>
+                    <td>{{user.Email}}</td>
+                    <td>{{getTeamDetails(this).Name}}</td>
+                    <td>{{getRoleDetails(this).Name}}</td>
+                    <td>{{user.PhoneNumber}}</td>
+                    <td>{{user.Address}}</td>
                     <td>
-                        <button type="button" ng-click="editUserModel(row)" class="btn btn-sm btn-danger">
+                        <button type="button" ng-click="editUserModel(user)" class="btn btn-sm btn-danger">
                             <i class="glyphicon glyphicon-pencil">
                             </i>
                         </button>
                     </td>
                     <td>
-                        <button type="button" ng-click="deleteUserModel(row)" class="btn btn-sm btn-danger">
+                        <button type="button" ng-click="deleteUserModel(user)" class="btn btn-sm btn-danger">
                             <i class="glyphicon glyphicon-remove-circle">
                             </i>
                         </button>

@@ -52,6 +52,17 @@ angular.module('yeomanApp')
 
       };
 
+      $scope.getRoleDetails = function (rowObj) {
+          return _.find($scope.roles, function(role) {
+              return role.Id ===rowObj.user.RoleId;
+          });
+      };
+      $scope.getTeamDetails = function (rowObj) {
+          return _.find($scope.teams, function(team) {
+              return team.Id ===rowObj.user.TeamId;
+          });
+      };
+
       $scope.deleteUser = function (user) {
           UserService.deleteUser(user.Id).then(function (response) {
               //_.remove($scope.users, function (user) {
