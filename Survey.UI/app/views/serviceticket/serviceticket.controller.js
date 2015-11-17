@@ -9,8 +9,8 @@
  */
 angular.module('yeomanApp')
   .controller('ServiceTicketController', [
-      '$scope', 'ServiceTicketService', '$uibModal', '$log','StatusService', 'ClientService','DepartmentService', 'SurveyTypeService', 'StatusreasonService', 'UserService',
-function ($scope, ServiceTicketService, $uibModal, $log,StatusService, ClientService, DepartmentService, SurveyTypeService, StatusreasonService, UserService) {
+      '$scope', '$location', 'ServiceTicketService', '$uibModal', '$log','StatusService', 'ClientService','DepartmentService', 'SurveyTypeService', 'StatusreasonService', 'UserService',
+function ($scope, $location, ServiceTicketService, $uibModal, $log,StatusService, ClientService, DepartmentService, SurveyTypeService, StatusreasonService, UserService) {
 
     $scope.newserviceticket = {}
 
@@ -192,7 +192,8 @@ function ($scope, ServiceTicketService, $uibModal, $log,StatusService, ClientSer
 
     $scope.addNew = function (newserviceticket) {
         ServiceTicketService.addNewServiceTicket(newserviceticket).then(function (response) {
-            $scope.init();
+            //$scope.init();
+            $location.path('/survey/serviceticket');
         },
         function (err) {
 
